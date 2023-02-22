@@ -1,0 +1,31 @@
+id,中文,English
+1,开始,Start
+2,介绍,Introduction
+3,设置,Setting
+4,排行,Ranking
+5,语言,Language
+6,音乐,Music
+7,音效,Sound Effect
+8,名次,Rank
+9,名称,Name
+10,分数,Score
+11,输入你的名字,Enter your name
+12,游戏结束,Game Over
+13,存活时间: ,Survive Time: 
+14,秒,seconds
+15,总分数: ,Total Score: 
+16,重来,Restart
+17,退出,Exit
+18,退出游戏？,Exit Game?
+19,是,Yes
+20,否,No
+21,击杀数：,Kill Count: 
+22,游戏介绍,Introduction
+23,点击开始按钮以开始游戏,Click the start button to start the game
+24,移动,Move
+25,射击,Shoot
+26,活得更久、杀得更多以获取高分！,Survive longer and kill more to get higher score!
+27,服务器地址,Server Address
+28,连接错误！是否以离线模式继续？,Connection Error! Continue with offline mode?
+29,未知错误！请重启游戏！,Something went wrong! Please restart game!
+30,退出,Exit

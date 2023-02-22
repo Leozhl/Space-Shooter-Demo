@@ -1,0 +1,79 @@
+syntax = "proto3";
+
+package msg;
+
+option go_package = "./";
+
+enum MessageType {
+	PlayerEnter = 0;
+	PlayerMove = 1;
+	PlayerRotate = 2;
+	PlayerStop = 3;
+	PlayerShoot = 4;
+	PlayerSetHealth = 5;
+	PlayerExit = 6;
+	PlayerDeath = 7;
+}
+
+message MsgType {
+	int32 id = 1;
+	MessageType msgType = 2;
+}
+
+
+message MsgPlayerEnter {
+	int32 id = 1;
+	float positionX = 2;
+	float positionY = 3;
+	float positionZ = 4;
+	float forwardX = 5;
+	float forwardY = 6;
+	float forwardZ = 7;
+	float curHealth = 8;
+	float maxHealth = 9;
+}
+
+message MsgPlayerMove {
+	int32 id =1;
+	float directionX = 2;
+	float directionY = 3;
+	float positionX = 4;
+	float positionY = 5;
+	float positionZ = 6;
+}
+
+message MsgPlayerRotate {
+	int32 id = 1;
+	float forwardX = 2;
+	float forwardY = 3;
+	float forwardZ = 4;
+}
+
+message MsgPlayerStop {
+	int32 id = 1;
+}
+
+message MsgPlayerShoot {
+	int32 id = 1;
+	float positionX = 2;
+	float positionY = 3;
+	float positionZ = 4;
+	float forwardX = 5;
+	float forwardY = 6;
+	float forwardZ = 7;
+}
+
+message MsgPlayerSetHealth {
+	int32 id = 1;
+	float curHealth = 2;
+	float maxHealth = 3;
+}
+
+message MsgPlayerExit {
+	int32 id = 1;
+}
+
+message MsgPlayerDeath {
+	int32 id = 1;
+	int32 killerID = 2;
+}
